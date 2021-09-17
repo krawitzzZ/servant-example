@@ -21,9 +21,36 @@ dependencies:
 - base >= 4.7 && < 5
 - aeson
 - servant-server
+- servant
+- servant-errors
 - wai
 - warp
+- time
 - text
+- mtl
+- attoparsec
+- bytestring
+- string-conversions
+- lucid
+- http-media
+- base-compat
+- directory
+- blaze-markup
+- blaze-html
+
+default-extensions:
+- DataKinds
+- DeriveAnyClass
+- DeriveGeneric
+- FlexibleInstances
+- GeneralizedNewtypeDeriving
+- MultiParamTypeClasses
+- OverloadedStrings
+- RankNTypes
+- ScopedTypeVariables
+- TypeApplications
+- TypeFamilies
+- TypeOperators
 
 library:
   source-dirs: src

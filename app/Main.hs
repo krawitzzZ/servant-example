@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import qualified TodoServer
 
 main :: IO ()
-main = startApp
+main = do
+  TodoServer.run 3000
