@@ -41,6 +41,11 @@ packages:
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
 # extra-deps: []
+extra-deps:
+- beam-core-0.9.1.0@sha256:70659e3046bfecda49b1b921bf088899bad859ea649552c78d464e634740b107,5282
+- beam-migrate-0.5.1.0@sha256:55d5fae17584c14b654d19d9de01f0a65e6c229561ce4fd12de92eba98b39105,4923
+- beam-sqlite-0.5.1.0@sha256:ec2a5cf9cc427a57c1c6872194450cd2e5d287e7a50b1ab554badb5138e78e7d,3634
+- dlist-0.8.0.8@sha256:90ca348bffdc62d7070bcf0e97c728f8d01b24fbc7ea08d2909157d0da76534c,2066
 
 # Override default flag values for local packages and extra-deps
 # flags: {}

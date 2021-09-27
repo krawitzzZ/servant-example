@@ -4,12 +4,13 @@
 ARG VARIANT=8
 FROM haskell:${VARIANT}
 
+WORKDIR /app
 # Use the [Option] comment to specify true/false arguments that should appear in VS Code UX
 #
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
 # [Option] Upgrade OS packages to their latest versions
-ARG UPGRADE_PACKAGES="false"
+ARG UPGRADE_PACKAGES="true"
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies
 ARG USERNAME=vscode

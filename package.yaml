@@ -20,6 +20,7 @@ description:         Please see the README on GitHub at <https://github.com/kraw
 dependencies:
 - base >= 4.7 && < 5
 - aeson
+- uuid
 - servant-server
 - servant
 - servant-errors
@@ -27,6 +28,11 @@ dependencies:
 - warp
 - time
 - text
+- beam-core
+- beam-sqlite
+- sqlite-simple
+- beam-migrate
+- cache
 - mtl
 - attoparsec
 - bytestring
@@ -40,17 +46,28 @@ dependencies:
 
 default-extensions:
 - DataKinds
+- DefaultSignatures
 - DeriveAnyClass
 - DeriveGeneric
+- DerivingStrategies
+- DeriveDataTypeable
+- EmptyDataDecls
+- FlexibleContexts
 - FlexibleInstances
 - GeneralizedNewtypeDeriving
+- GADTs
 - MultiParamTypeClasses
+- OverloadedLabels
 - OverloadedStrings
 - RankNTypes
 - ScopedTypeVariables
+- StandaloneDeriving
+- TemplateHaskell
 - TypeApplications
 - TypeFamilies
 - TypeOperators
+- UndecidableInstances
+- QuasiQuotes
 
 library:
   source-dirs: src

@@ -1,7 +1,7 @@
 module Main where
 
-import qualified TodoServer
+import qualified Server
 
 main :: IO ()
 main = do
-  TodoServer.run 3000
+  Server.run 3000

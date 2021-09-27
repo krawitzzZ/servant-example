@@ -3,14 +3,9 @@
 {
   "name": "Haskell (Community)",
   // Update the 'dockerfile' property if you aren't using the standard 'Dockerfile' filename.
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      // Update 'VARIANT' to pick a Haskell version: 9, 8
-      "VARIANT": "8",
-      "UPGRADE_PACKAGES": "true"
-    }
-  },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
   // Set *default* container specific settings.json values on container create.
   "settings": {
     "files.associations": {
@@ -41,11 +36,12 @@
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
+    5432,
     3000,
     8080
   ],
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "stack install data-tree-print brittany hlint hoogle",
+  "postCreateCommand": "stack install data-tree-print brittany hlint",
   // Comment out connect as root instead. To add a non-root user, see: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
 }
